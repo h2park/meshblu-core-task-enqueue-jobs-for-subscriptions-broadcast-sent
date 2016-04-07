@@ -36,7 +36,7 @@ class EnqueueJobsForSubscriptionsBroadcastSent
           uuid: subscription.subscriberUuid
         fromUuid: subscription.emitterUuid
         toUuid: subscription.subscriberUuid
-        messageRoute: [{
+        route: [{
           fromUuid: subscription.emitterUuid
           toUuid: subscription.subscriberUuid
           type: 'broadcast.sent'

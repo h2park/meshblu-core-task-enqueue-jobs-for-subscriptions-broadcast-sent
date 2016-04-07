@@ -91,7 +91,7 @@ describe 'EnqueueJobsForSubscriptionsBroadcastSent', ->
                   uuid: 'subscriber-uuid'
                 fromUuid: 'emitter-uuid'
                 toUuid: 'subscriber-uuid'
-                messageRoute: [
+                route: [
                  {
                    fromUuid: "emitter-uuid"
                    toUuid: "subscriber-uuid"
