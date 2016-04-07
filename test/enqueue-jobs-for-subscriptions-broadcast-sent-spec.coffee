@@ -93,8 +93,8 @@ describe 'EnqueueJobsForSubscriptionsBroadcastSent', ->
                 toUuid: 'subscriber-uuid'
                 route: [
                  {
-                   fromUuid: "emitter-uuid"
-                   toUuid: "subscriber-uuid"
+                   from: "emitter-uuid"
+                   to: "subscriber-uuid"
                    type: "broadcast.sent"
                  }
                ]
