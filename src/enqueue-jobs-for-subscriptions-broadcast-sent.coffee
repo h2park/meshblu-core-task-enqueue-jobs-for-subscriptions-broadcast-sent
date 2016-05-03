@@ -41,6 +41,7 @@ class EnqueueJobsForSubscriptionsBroadcastSent
           to: subscription.subscriberUuid
           type: 'broadcast.sent'
         }]
+        forwardedRoutes: request.metadata?.forwardedRoutes
       rawData: request.rawData
     }
 
