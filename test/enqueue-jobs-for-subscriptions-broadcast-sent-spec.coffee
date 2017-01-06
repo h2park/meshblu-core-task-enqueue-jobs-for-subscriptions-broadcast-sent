@@ -14,7 +14,7 @@ describe 'EnqueueJobsForSubscriptionsBroadcastSent', ->
     @datastore = new Datastore
       database: database
       collection: 'subscriptions'
-    database.subscriptions.remove done
+    database.collection('subscriptions').remove done
 
   beforeEach ->
     @redisKey = uuid.v1()
